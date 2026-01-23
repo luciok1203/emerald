@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap");
 
 :root {
   --primary-green: #2e5e38;
@@ -17,7 +17,7 @@
 }
 
 body {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   color: var(--text-primary);
   line-height: 1.6;
   background-color: var(--bg-color);
@@ -47,7 +47,7 @@ ul {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 60px 20px 100px; 
+  padding: 60px 20px 100px;
 }
 
 /* Hero Section with Low-Poly Effect */
@@ -58,7 +58,8 @@ ul {
   justify-content: center;
   align-items: center;
   background-color: #2e5e38;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/banner.jpg'); /* Darkened by 50% */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./images/banner.jpg"); /* Darkened by 50% */
   background-size: cover;
   background-position: center; /* Center alignment */
   background-repeat: no-repeat;
@@ -82,8 +83,8 @@ ul {
   text-align: center;
   letter-spacing: 2px;
   z-index: 10;
-  text-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  font-family: 'Impact', sans-serif; /* Could be a different font for title if needed */
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  font-family: "Impact", sans-serif; /* Could be a different font for title if needed */
 }
 
 /* Header & Nav */
@@ -96,14 +97,18 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
-  background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, transparent 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.4) 0%,
+    transparent 100%
+  );
   transition: background-color 0.3s ease; /* Smooth transition */
 }
 
 header.scrolled {
   background: #000000; /* Black background on scroll */
-  border-bottom: 1px solid rgba(255,255,255,0.05); /* Optional: subtle border */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* Optional: subtle border */
 }
 
 .nav-container {
@@ -122,13 +127,13 @@ header.scrolled {
   display: flex;
   align-items: center;
   gap: 12px;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .logo-icon {
-    width: auto;
-    height: 2rem;
-    object-fit: contain;
+  width: auto;
+  height: 2rem;
+  object-fit: contain;
 }
 
 .desktop-menu {
@@ -138,7 +143,7 @@ header.scrolled {
 
 .desktop-menu a {
   font-size: 0.95rem;
-  color: rgba(255,255,255,0.7);
+  color: rgba(255, 255, 255, 0.7);
   font-weight: 500;
   letter-spacing: 0.5px;
   transition: all 0.3s;
@@ -149,7 +154,7 @@ header.scrolled {
 .desktop-menu a.active {
   color: white;
   font-weight: 700;
-  text-shadow: 0 0 8px rgba(255,255,255,0.5);
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
 }
 
 /* Mobile Menu */
@@ -236,7 +241,7 @@ header.scrolled {
   gap: 15px;
   transform: translateX(100%);
   transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-  box-shadow: -5px 0 15px rgba(0,0,0,0.5);
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
 }
 
 .mobile-nav-sidebar.active {
@@ -253,7 +258,7 @@ header.scrolled {
   display: block;
   border-radius: 8px;
   transition: all 0.3s ease;
-  
+
   /* Initial Entry State */
   opacity: 0;
   transform: translateY(20px);
@@ -275,15 +280,29 @@ header.scrolled {
 }
 
 /* Delays */
-.mobile-nav-sidebar.active a:nth-child(1) { transition-delay: 0.1s; }
-.mobile-nav-sidebar.active a:nth-child(2) { transition-delay: 0.2s; }
-.mobile-nav-sidebar.active a:nth-child(3) { transition-delay: 0.3s; }
-.mobile-nav-sidebar.active a:nth-child(4) { transition-delay: 0.4s; }
-.mobile-nav-sidebar.active a:nth-child(5) { transition-delay: 0.5s; }
+.mobile-nav-sidebar.active a:nth-child(1) {
+  transition-delay: 0.1s;
+}
+.mobile-nav-sidebar.active a:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.mobile-nav-sidebar.active a:nth-child(3) {
+  transition-delay: 0.3s;
+}
+.mobile-nav-sidebar.active a:nth-child(4) {
+  transition-delay: 0.4s;
+}
+.mobile-nav-sidebar.active a:nth-child(5) {
+  transition-delay: 0.5s;
+}
 
 @media (max-width: 900px) {
-  .desktop-menu { display: none; }
-  .mobile-menu-btn { display: block; }
+  .desktop-menu {
+    display: none;
+  }
+  .mobile-menu-btn {
+    display: block;
+  }
 }
 
 /* Typography Utilities */
@@ -297,9 +316,9 @@ header.scrolled {
 }
 
 .section-title.big-title {
-    font-size: 2.5rem; /* Larger for History years etc */
-    border-bottom: none;
-    margin-bottom: 1.5rem;
+  font-size: 2.5rem; /* Larger for History years etc */
+  border-bottom: none;
+  margin-bottom: 1.5rem;
 }
 
 .text-highlight-red {
@@ -308,88 +327,97 @@ header.scrolled {
 }
 
 .text-highlight-green {
-    color: var(--light-green);
-    font-weight: 700;
+  color: var(--light-green);
+  font-weight: 700;
 }
 
 /* Dashed Separator */
 .dashed-separator {
-    border-top: 1px dotted #ccc;
-    margin: 40px 0;
-    width: 100%;
+  border-top: 1px dotted #ccc;
+  margin: 40px 0;
+  width: 100%;
 }
 
 /* Footer */
 footer {
-    padding: 30px 20px;
-    text-align: left;
-    font-size: 0.85rem;
-    color: #999;
-    border-top: 1px dotted #ccc;
-    background: transparent;
-    max-width: 1200px;
-    margin: 0 auto;
+  padding: 30px 20px;
+  text-align: left;
+  font-size: 0.85rem;
+  color: #999;
+  border-top: 1px dotted #ccc;
+  background: transparent;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* --- Page Specifics reused across app --- */
 
 /* Home Layout */
 .home-split {
-    display: flex;
-    gap: 60px;
-    align-items: center;
-    margin-bottom: 60px;
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 60px;
 }
-.home-text { flex: 1.5; font-size: 1.05rem; }
-.home-visual { flex: 1; display: flex; justify-content: center; }
+.home-text {
+  flex: 1.5;
+  font-size: 1.05rem;
+}
+.home-visual {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
 
 @media (max-width: 768px) {
-    .home-split { flex-direction: column; }
+  .home-split {
+    flex-direction: column;
+  }
 }
 
 /* History Layout */
 .history-year-title {
-    font-size: 1.8rem;
-    color: var(--light-green);
-    font-weight: 700;
-    margin: 60px 0 20px;
-    padding-bottom: 10px;
-    border-bottom: 2px dotted #ccc; /* Thicker dotted line for year separator */
+  font-size: 1.8rem;
+  color: var(--light-green);
+  font-weight: 700;
+  margin: 60px 0 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px dotted #ccc; /* Thicker dotted line for year separator */
 }
 
 .history-entry {
-    margin-bottom: 30px;
-    padding-left: 10px;
+  margin-bottom: 30px;
+  padding-left: 10px;
 }
 .history-month {
-    font-weight: 900;
-    font-size: 1.1rem;
-    margin-bottom: 8px;
-    display: block;
+  font-weight: 900;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  display: block;
 }
 .history-list li {
-    position: relative;
-    padding-left: 15px;
-    margin-bottom: 4px;
-    color: #555;
-    font-size: 0.95rem;
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 4px;
+  color: #555;
+  font-size: 0.95rem;
 }
 .history-list li::before {
-    content: '■'; /* Square bullet */
-    font-size: 0.5rem;
-    position: absolute;
-    left: 0;
-    top: 9px;
-    color: #888;
+  content: "■"; /* Square bullet */
+  font-size: 0.5rem;
+  position: absolute;
+  left: 0;
+  top: 9px;
+  color: #888;
 }
 
 /* Oz Page */
 .check-list li {
-    position: relative;
-    padding-left: 30px;
-    margin-bottom: 10px;
-    font-weight: 500;
-} 
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
 /* We can use CSS to add the checkmark icon if we want pure CSS, or keep doing it in JSX. Doing pure CSS relative */
 
 /* Oz Page Specifics */
@@ -490,89 +518,93 @@ footer {
 
 /* Members Grid */
 .members-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 40px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
 }
 .member-row {
-    display: flex;
-    gap: 40px;
-    padding-bottom: 40px;
-    border-bottom: 1px dotted #eee;
+  display: flex;
+  gap: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px dotted #eee;
 }
 .member-img {
-    width: 200px;
-    height: 267px; /* 3:4 aspect ratio (200 * 4/3) */
-    object-fit: cover;
-    object-position: top; /* Crop from top */
-    background: #f0f0f0; /* Fallback */
-    flex-shrink: 0;
+  width: 200px;
+  height: 267px; /* 3:4 aspect ratio (200 * 4/3) */
+  object-fit: cover;
+  object-position: top; /* Crop from top */
+  background: #f0f0f0; /* Fallback */
+  flex-shrink: 0;
 }
 .member-info h3 {
-    font-size: 1.8rem;
-    color: var(--light-green);
-    margin-bottom: 15px;
+  font-size: 1.8rem;
+  color: var(--light-green);
+  margin-bottom: 15px;
 }
 .member-info ul li {
-    font-size: 0.95rem;
-    color: #333;
-    margin-bottom: 5px;
-    font-weight: 500;
-    list-style: square; /* Square bullets */
-    margin-left: 20px;
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 5px;
+  font-weight: 500;
+  list-style: square; /* Square bullets */
+  margin-left: 20px;
 }
 
 @media (min-width: 768px) {
-    .members-grid { grid-template-columns: 1fr; } 
-    /* The design shows a list, so 1 column is fine, but maybe row layout */
+  .members-grid {
+    grid-template-columns: 1fr;
+  }
+  /* The design shows a list, so 1 column is fine, but maybe row layout */
 }
 
 .interview-q {
-    color: var(--light-green);
-    font-size: 1.3rem;
-    font-weight: 700;
-    margin-top: 60px;
-    margin-bottom: 20px;
+  color: var(--light-green);
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-top: 60px;
+  margin-bottom: 20px;
 }
 .interview-a {
-    font-size: 1rem;
-    color: #444;
-    line-height: 1.8;
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.8;
 }
 
 /* Members Grid */
 .members-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 40px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
 }
 .member-row {
-    display: flex;
-    gap: 40px;
-    padding-bottom: 40px;
-    border-bottom: 1px dotted #eee;
+  display: flex;
+  gap: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px dotted #eee;
 }
 .member-img-placeholder {
-    width: 200px;
-    height: 200px; /* Square or portrait */
-    background: #f0f0f0; /* Grey block as requested: "Empty" but visualizes generic space */
-    flex-shrink: 0;
+  width: 200px;
+  height: 200px; /* Square or portrait */
+  background: #f0f0f0; /* Grey block as requested: "Empty" but visualizes generic space */
+  flex-shrink: 0;
 }
 .member-info h3 {
-    font-size: 1.8rem;
-    color: var(--light-green);
-    margin-bottom: 15px;
+  font-size: 1.8rem;
+  color: var(--light-green);
+  margin-bottom: 15px;
 }
 .member-info ul li {
-    font-size: 0.95rem;
-    color: #333;
-    margin-bottom: 5px;
-    font-weight: 500;
-    list-style: square; /* Square bullets */
-    margin-left: 20px;
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 5px;
+  font-weight: 500;
+  list-style: square; /* Square bullets */
+  margin-left: 20px;
 }
 
 @media (min-width: 768px) {
-    .members-grid { grid-template-columns: 1fr; } 
-    /* The design shows a list, so 1 column is fine, but maybe row layout */
+  .members-grid {
+    grid-template-columns: 1fr;
+  }
+  /* The design shows a list, so 1 column is fine, but maybe row layout */
 }

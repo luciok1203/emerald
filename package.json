@@ -10,10 +10,12 @@
     "check:types": "tsc",
     "check:format": "biome check .",
     "check:unused": "knip",
-    "check-all": "yarn check:types && yarn check:format && yarn check:unused"
+    "check-all": "yarn check:types && yarn check:format && yarn check:unused",
+    "fix": "biome check --write --unsafe .",
+    "fix-all": "yarn fix && yarn check-all",
+    "ready": "yarn fix-all && yarn build"
   },
   "dependencies": {
-    "lucide-react": "^0.562.0",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
     "react-router-dom": "^7.12.0"
