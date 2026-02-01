@@ -1,0 +1,87 @@
+/* Oz Page Specifics */
+.intro {
+  margin-bottom: 40px;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+
+.checklist {
+  list-style: none;
+  margin-left: 0;
+  margin-bottom: 30px;
+}
+
+.checklist li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 12px;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.checklist li strong {
+  color: #000;
+  font-weight: 700;
+}
+
+.checklist li .bullet {
+  color: var(--light-green); /* Using global variable */
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.checklist li .desc {
+  display: block;
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 4px;
+}
+
+.quoteBox {
+  background-color: #f9f9f9;
+  border-left: 4px solid #333;
+  padding: 30px;
+  margin: 50px 0;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: #333;
+}
+
+.quoteAuthor {
+  margin-top: 15px;
+  font-weight: 700;
+  text-align: right;
+  font-style: normal;
+  font-size: 0.95rem;
+}
+
+.slogan {
+  color: var(--light-green);
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 30px;
+  letter-spacing: -0.5px;
+}
+
+.effectGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.effectItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  color: #333;
+}

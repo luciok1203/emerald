@@ -1,4 +1,5 @@
 import cycleImage from '../images/cycle.png';
+import styles from './Home.module.css';
 
 const Home = () => {
   return (
@@ -17,8 +18,8 @@ const Home = () => {
 
         <div className="dashed-separator"></div>
 
-        <div className="home-split">
-          <div className="home-text">
+        <div className={styles.split}>
+          <div className={styles.text}>
             <p style={{ marginBottom: '1.5rem' }}>
               우리의 프로그램 &lt;OZ&gt;는 각종 바이러스에 대응하여 다양한 킬러
               프로그램으로 적응, 변형하여{' '}
@@ -30,7 +31,7 @@ const Home = () => {
               12%도 조만간 OZ의 손아귀 안에 들어가게 됩니다.
             </p>
           </div>
-          <div className="home-visual">
+          <div className={styles.visual}>
             <img
               src={cycleImage}
               alt="Cycle"

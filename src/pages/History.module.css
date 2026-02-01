@@ -1,0 +1,38 @@
+/* History Layout */
+.yearTitle {
+  font-size: 1.8rem;
+  color: var(--light-green); /* Using variable from global context */
+  font-weight: 700;
+  margin: 60px 0 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px dotted #ccc; /* Thicker dotted line for year separator */
+}
+
+.entry {
+  margin-bottom: 30px;
+  padding-left: 10px;
+}
+
+.month {
+  font-weight: 900;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.list li {
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 4px;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.list li::before {
+  content: "■"; /* Square bullet */
+  font-size: 0.5rem;
+  position: absolute;
+  left: 0;
+  top: 9px;
+  color: #888;
+}

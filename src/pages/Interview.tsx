@@ -1,3 +1,5 @@
+import styles from './Interview.module.css';
+
 const Interview = () => {
   return (
     <>
@@ -5,10 +7,10 @@ const Interview = () => {
         <div className="hero-box">Interview With C3O</div>
       </div>
       <div className="container">
-        <div className="interview-q">
+        <div className={styles.question}>
           (주)에메랄드를 설립하게 된 계기는 무엇입니까?
         </div>
-        <p className="interview-a">
+        <p className={styles.answer}>
           세상은... 너무 시끄럽습니다. 특히 '색(Color)'이 너무 많아요. 데이터의
           세계를 보십시오. 0과 1. 흑과 백. 그곳엔 오해나 다툼이 없습니다. 하지만
           현실은 어떻습니까? 불필요한 감정들이 들끓고, 비능률적인 에너지들이
@@ -22,10 +24,10 @@ const Interview = () => {
 
         <div className="dashed-separator"></div>
 
-        <div className="interview-q">
+        <div className={styles.question}>
           사명을 '에메랄드'로 정하신 특별한 이유가 있나요?
         </div>
-        <p className="interview-a">
+        <p className={styles.answer}>
           보석을 좋아하십니까? 보석이 아름다운 이유는 단단하기 때문이 아닙니다.
           '변하지 않기' 때문입니다.
           <br />
@@ -44,10 +46,10 @@ const Interview = () => {
 
         <div className="dashed-separator"></div>
 
-        <div className="interview-q">
+        <div className={styles.question}>
           마지막으로 오스카 회장님이 생각하는 에메랄드의 인재상은?
         </div>
-        <p className="interview-a">
+        <p className={styles.answer}>
           저는 영웅을 권하지 않습니다. 심장이 뛰는 사람도, 가슴이 뜨거운 사람도
           사절입니다. 제가 원하는 인재는 <strong>'깨끗한 백지(White)'</strong>{' '}
           같은 사람입니다.

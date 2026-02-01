@@ -1,3 +1,5 @@
+import styles from './Oz.module.css';
+
 const Oz = () => {
   return (
     <>
@@ -8,19 +10,19 @@ const Oz = () => {
         {/* Section 1: OZ Security Program */}
         <h2 className="section-title">OZ Security Program™</h2>
 
-        <p className="oz-intro">
+        <p className={styles.intro}>
           O.Z. (Omnipotent Zero-defect) 프로그램은 인류 역사상 가장 진화된{' '}
           <strong>적응형 바이러스 박멸 시스템</strong>입니다. 기존의 백신
           프로그램이 단순히 바이러스를 '차단'하는 데 그쳤다면, OZ는 바이러스를
           학습하고, 변형하고, 완전히 소멸시킵니다.
         </p>
 
-        <h3 className="oz-subtitle">핵심 기술</h3>
-        <ul className="oz-checklist">
+        <h3 className={styles.subtitle}>핵심 기술</h3>
+        <ul className={styles.checklist}>
           <li>
-            <span className="bullet">🔹</span>{' '}
+            <span className={styles.bullet}>🔹</span>{' '}
             <strong>Adaptive Mutation Engine (AME)</strong>
-            <span className="desc">
+            <span className={styles.desc}>
               실시간으로 바이러스 변종을 감지하고, 0.001초 내에 대응 킬러
               프로그램을 자동 생성합니다.
               <br />전 세계 88%의 컴퓨터 바이러스가 OZ 출시 2년 만에
@@ -28,9 +30,9 @@ const Oz = () => {
             </span>
           </li>
           <li>
-            <span className="bullet">🔹</span>{' '}
+            <span className={styles.bullet}>🔹</span>{' '}
             <strong>Predictive Threat Analysis (PTA)</strong>
-            <span className="desc">
+            <span className={styles.desc}>
               AI 기반 예측 시스템으로 아직 발생하지 않은 바이러스까지 사전
               차단합니다.
               <br />
@@ -39,9 +41,9 @@ const Oz = () => {
             </span>
           </li>
           <li>
-            <span className="bullet">🔹</span>{' '}
+            <span className={styles.bullet}>🔹</span>{' '}
             <strong>Zero-Defect Protocol (ZDP)</strong>
-            <span className="desc">
+            <span className={styles.desc}>
               버그, 오류, 예외 상황이 존재하지 않습니다.
               <br />
               99.9%가 아닌, 100% 완벽한 보안을 약속합니다.
@@ -49,29 +51,29 @@ const Oz = () => {
           </li>
         </ul>
 
-        <h3 className="oz-subtitle">실적</h3>
-        <ul className="oz-checklist">
+        <h3 className={styles.subtitle}>실적</h3>
+        <ul className={styles.checklist}>
           <li>
-            <span className="bullet">📊</span>{' '}
+            <span className={styles.bullet}>📊</span>{' '}
             <strong>글로벌 보안 시장 점유율: 73%</strong>
           </li>
           <li>
-            <span className="bullet">🏆</span>{' '}
+            <span className={styles.bullet}>🏆</span>{' '}
             <strong>2024~2026 연속 '올해의 보안 솔루션' 수상</strong>
           </li>
           <li>
-            <span className="bullet">💰</span>{' '}
+            <span className={styles.bullet}>💰</span>{' '}
             <strong>Fortune 500대 기업 중 421개사가 도입</strong>
           </li>
           <li>
-            <span className="bullet">🌍</span>{' '}
+            <span className={styles.bullet}>🌍</span>{' '}
             <strong>전 세계 127개국에서 사용 중</strong>
           </li>
         </ul>
 
-        <div className="oz-quote-box">
+        <div className={styles.quoteBox}>
           "OZ는 단순한 프로그램이 아닙니다. 완벽한 세상을 향한 첫걸음입니다."
-          <div className="oz-quote-author">— 오스카 회장, (주) 에메랄드</div>
+          <div className={styles.quoteAuthor}>— 오스카 회장, (주) 에메랄드</div>
         </div>
 
         <div className="dashed-separator"></div>
@@ -80,22 +82,22 @@ const Oz = () => {
         <h2 className="section-title" style={{ marginBottom: '10px' }}>
           OZ Machine™
         </h2>
-        <div className="oz-slogan">Perfect System, Perfect Efficiency</div>
+        <div className={styles.slogan}>Perfect System, Perfect Efficiency</div>
 
-        <h3 className="oz-subtitle">인간과 시스템의 완벽한 융합</h3>
-        <p className="oz-intro">
+        <h3 className={styles.subtitle}>인간과 시스템의 완벽한 융합</h3>
+        <p className={styles.intro}>
           OZ Machine은 OZ 프로그램의 성능을 극대화하기 위해 설계된 차세대 통합
           최적화 시스템입니다. 이 기계는 조직 내 모든 구성원의 업무 효율을
           측정하고, 불필요한 요소를 제거하며, 가장 최적화된 상태로 시스템을
           유지합니다.
         </p>
 
-        <h3 className="oz-subtitle">작동 원리</h3>
-        <ul className="oz-checklist">
+        <h3 className={styles.subtitle}>작동 원리</h3>
+        <ul className={styles.checklist}>
           <li>
-            <span className="bullet">🔹</span>{' '}
+            <span className={styles.bullet}>🔹</span>{' '}
             <strong>Human Optimization Protocol (HOP)</strong>
-            <span className="desc">
+            <span className={styles.desc}>
               직원의 생체 데이터(뇌파, 심박수, 감정 패턴)를 실시간 분석합니다.
               <br />
               비생산적 사고, 과도한 감정, 불필요한 망설임을 자동으로 감지하고
@@ -105,9 +107,9 @@ const Oz = () => {
             </span>
           </li>
           <li>
-            <span className="bullet">🔹</span>{' '}
+            <span className={styles.bullet}>🔹</span>{' '}
             <strong>Resource Allocation System (RAS)</strong>
-            <span className="desc">
+            <span className={styles.desc}>
               각 직원의 "여분의 에너지"를 추출하여 OZ 프로그램의 연산 자원으로
               활용합니다.
               <br />
@@ -119,9 +121,9 @@ const Oz = () => {
             </span>
           </li>
           <li>
-            <span className="bullet">🔹</span>{' '}
+            <span className={styles.bullet}>🔹</span>{' '}
             <strong>Emotional Neutralization Filter (ENF)</strong>
-            <span className="desc">
+            <span className={styles.desc}>
               업무 중 발생하는 불안, 분노, 슬픔, 과도한 기쁨 등을 자동
               차단합니다.
               <br />
@@ -131,12 +133,12 @@ const Oz = () => {
           </li>
         </ul>
 
-        <h3 className="oz-subtitle">도입 효과</h3>
-        <div className="oz-effect-grid">
-          <div className="oz-effect-item">✅ 이직률 0%</div>
-          <div className="oz-effect-item">✅ 산업재해 0건</div>
-          <div className="oz-effect-item">✅ 내부 갈등 0건</div>
-          <div className="oz-effect-item">
+        <h3 className={styles.subtitle}>도입 효과</h3>
+        <div className={styles.effectGrid}>
+          <div className={styles.effectItem}>✅ 이직률 0%</div>
+          <div className={styles.effectItem}>✅ 산업재해 0건</div>
+          <div className={styles.effectItem}>✅ 내부 갈등 0건</div>
+          <div className={styles.effectItem}>
             ✅ 생산성 지표 역대 최고치 경신 중
           </div>
         </div>

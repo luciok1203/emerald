@@ -1,0 +1,22 @@
+/* Home Layout */
+.split {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.text {
+  flex: 1.5;
+  font-size: 1.05rem;
+}
+.visual {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .split {
+    flex-direction: column;
+  }
+}

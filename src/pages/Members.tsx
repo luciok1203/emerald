@@ -1,8 +1,9 @@
 import crowImg from '../images/profiles/Crow.png';
 import dorothyImg from '../images/profiles/Dorothy.png';
-import leoImg from '../images/profiles/Leo.png';
+import reoImg from '../images/profiles/Reo.png';
 import oscarImg from '../images/profiles/Oscar.png';
 import tinImg from '../images/profiles/Tin.png';
+import styles from './Members.module.css';
 
 interface MemberItemProps {
   name: string;
@@ -12,13 +13,13 @@ interface MemberItemProps {
 }
 
 const MemberItem = ({ name, roles, description, image }: MemberItemProps) => (
-  <div className="member-row">
+  <div className={styles.row}>
     {image ? (
-      <img src={image} alt={name} className="member-img" />
+      <img src={image} alt={name} className={styles.img} />
     ) : (
-      <div className="member-img"></div>
+      <div className={styles.img}></div>
     )}
-    <div className="member-info">
+    <div className={styles.info}>
       <h3>{name}</h3>
       <ul>
         {roles.map((role, idx) => (
@@ -41,7 +42,7 @@ const Members = () => {
         <div className="hero-box">2embers</div>
       </div>
       <div className="container">
-        <div className="members-grid">
+        <div className={styles.grid}>
           <MemberItem
             name="Oscar"
             roles={['CEO', '총괄 담당자']}
@@ -64,9 +65,9 @@ const Members = () => {
             image={dorothyImg}
           />
           <MemberItem
-            name="Leo"
+            name="Reo"
             roles={['인사팀 총괄 담당자']}
-            image={leoImg}
+            image={reoImg}
           />
         </div>
       </div>

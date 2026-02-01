@@ -1,0 +1,12 @@
+.question {
+  color: var(--light-green);
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.answer {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.8;
+}
