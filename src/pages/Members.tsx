@@ -38,35 +38,36 @@ const MemberItem = ({ name, roles, description, image }: MemberItemProps) => (
 const Members = () => {
   return (
     <>
+      {/* 배너 영역: 16:3 비율 및 6vw 폰트 적용 대상 */}
       <div className="hero-banner">
         <div className="hero-box">2embers</div>
       </div>
+
       <div className="container">
         <div className={styles.grid}>
           <MemberItem
             name="Oscar"
-            roles={['CEO', '총괄 담당자']}
-            description="에메랄드의 창립자이자 설계자. 모든 시스템을 총괄합니다."
+            roles={['대표이사', '대표이사 집무실']}
             image={oscarImg}
           />
           <MemberItem
             name="Crow"
-            roles={['재정전략이사', 'Prime minister']}
+            roles={['경영전략이사', '전략기획실']}
             image={crowImg}
           />
           <MemberItem
             name="Tin"
-            roles={['생산라인 QC 총괄', '머신 총괄 담당']}
+            roles={['시스템운영총괄', '시스템운영실']}
             image={tinImg}
           />
           <MemberItem
             name="Dorothy"
-            roles={['투자전략 총괄']}
+            roles={['자산운용총괄', '자산운용본부']}
             image={dorothyImg}
           />
           <MemberItem
             name="Reo"
-            roles={['인사팀 총괄 담당자']}
+            roles={['인재경영총괄', '인재경영실']}
             image={reoImg}
           />
         </div>
