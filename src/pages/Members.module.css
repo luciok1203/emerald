@@ -19,7 +19,7 @@
   object-fit: cover;
   object-position: top;
   background: #f0f0f0;
-  flex-shrink: 0; 
+  flex-shrink: 0;
 }
 .info h3 {
   font-size: 1.8rem;

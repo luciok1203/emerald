@@ -1,7 +1,7 @@
 import crowImg from '../images/profiles/Crow.png';
 import dorothyImg from '../images/profiles/Dorothy.png';
-import reoImg from '../images/profiles/Reo.png';
 import oscarImg from '../images/profiles/Oscar.png';
+import reoImg from '../images/profiles/Reo.png';
 import tinImg from '../images/profiles/Tin.png';
 import styles from './Members.module.css';
 
