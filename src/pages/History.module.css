@@ -1,4 +1,43 @@
 /* History Layout */
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  position: relative;
+}
+
+.historyContent {
+  flex: 1;
+}
+
+.imageWrapper {
+  flex: 0 0 300px; /* Fixed width for image container */
+  margin-top: 60px; /* Align with the first year title */
+}
+
+.graphImg {
+  width: 100%;
+  height: auto;
+  border: 1px solid #eee;
+  padding: 10px;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column-reverse; /* Image on top */
+  }
+
+  .imageWrapper {
+    flex: none;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+}
+
 .yearTitle {
   font-size: 1.8rem;
   color: var(--light-green); /* Using variable from global context */
