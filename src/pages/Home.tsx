@@ -16,8 +16,6 @@ const Home = () => {
           보안의 시작
         </h2>
 
-        <div className="dashed-separator"></div>
-
         <div className={styles.split}>
           <div className={styles.text}>
             <p style={{ marginBottom: '1.5rem' }}>

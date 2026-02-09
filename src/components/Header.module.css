@@ -70,13 +70,11 @@
 .desktopMenu a:hover,
 .desktopMenu a.active {
   color: white;
-  font-weight: 700;
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
 }
 
 .activeLink {
   color: white;
-  font-weight: 700;
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
 }
 

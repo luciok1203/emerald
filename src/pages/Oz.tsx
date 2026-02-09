@@ -144,26 +144,10 @@ const Oz = () => {
           </div>
         </div>
 
-        <div
-          style={{
-            marginTop: '50px',
-            fontWeight: 'bold',
-            fontStyle: 'italic',
-            textAlign: 'center',
-            color: '#333',
-          }}
-        >
+        <div className={styles.quoteBox}>
           "OZ Machine은 직원을 억압하지 않습니다. 그들을 자유롭게 만듭니다.
           고민에서, 두려움에서, 쓸데없는 감정에서."
-          <div
-            style={{
-              marginTop: '10px',
-              fontSize: '0.9rem',
-              fontStyle: 'normal',
-            }}
-          >
-            — 오스카 , (주) 에메랄드
-          </div>
+          <div className={styles.quoteAuthor}>— 오스카 회장, (주) 에메랄드</div>
         </div>
       </div>
     </>

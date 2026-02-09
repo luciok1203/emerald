@@ -42,7 +42,7 @@
   font-size: 1.8rem;
   color: var(--light-green); /* Using variable from global context */
   font-weight: 700;
-  margin: 60px 0 20px;
+  margin: 20px 0 20px;
   padding-bottom: 10px;
   border-bottom: 2px dotted #ccc; /* Thicker dotted line for year separator */
 }

@@ -51,7 +51,7 @@ const History = () => {
             <HistoryItem
               month="3월"
               content={[
-                'OZ 프로그램 개발 시작',
+                'OZ 프로그램 베타 버전 완성',
                 '내부 테스트 결과: 바이러스 차단율 94%',
                 '하지만 오스카는 불만: "94%는 실패다. 100%가 아니면 의미 없어."',
               ]}
@@ -60,8 +60,11 @@ const History = () => {
               month="12월"
               content={[
                 'OZ 프로그램 정식 출시',
-                '출시 1개월 만에 전국 100만 기업 도입',
-                '오스카의 기자회견: "OZ는 인간의 불완전함을 넘어선 완벽한 시스템입니다."',
+                '출시 3개월 만에 전국 100만 기업 도입',
+                <>
+                  <span className="text-highlight-red">오</span>스카의 기자회견:
+                  "OZ는 인간의 불완전함을 넘어선 완벽한 시스템입니다."
+                </>,
               ]}
             />
 
@@ -72,11 +75,8 @@ const History = () => {
             <HistoryItem
               month="1월"
               content={[
-                <>
-                  <span className="text-highlight-red">오</span>스카의 결정:
-                  에메랄드 시큐리티 상장 (KRX: EMER, 001230)
-                </>,
-                '주가 1만 원에서 시작해 3개월 만에 10만 원 돌파',
+                '오스카 회장, 에메랄드에서 인간 성능 확장 프로젝트 <OZ Machine> 발표',
+                '당시 여론은 신기술 VS 인권 침해 언쟁 심해, 이로 인해 OZ 주가 폭락',
               ]}
             />
             <HistoryItem
@@ -86,7 +86,7 @@ const History = () => {
             <HistoryItem
               month="8월"
               content={[
-                'OZ Machine 프로토타입 1호 대시민 공개, 전 신문사 서기 조사',
+                'OZ Machine 프로토타입 1호의 치명적 결함 발견, 전 실험체 폐기 조치',
               ]}
             />
             <HistoryItem
@@ -99,21 +99,21 @@ const History = () => {
             <HistoryItem
               month="1월"
               content={[
-                'OZ 프로그램, 전 세계 시장 점유율 80% 달성',
-                '오스카, TIME지 "올해의 인물" 선정',
+                'OZ 프로그램, 전 세계 바이러스 88% 박멸 달성',
+                '오스카, TIME지 "올해의 인물" 후보 지명',
               ]}
             />
             <HistoryItem
               month="4월"
               content={[
-                '사옥 이전: 강남 신사옥 (지상 50층, 지하 5층)',
+                '사옥 이전: 강남 신사옥 (지상 30층, 지하 5층)',
                 '지하 3~5층: OZ Machine 전용 시설 (외부 출입 금지)',
               ]}
             />
             <HistoryItem
               month="9월"
               content={[
-                'OZ Machine 완전 체제 돌입',
+                'OZ Machine 양산 체제 돌입',
                 '목표: 2026년 1월 안에 전국 20개 지사에 각 1대씩 배치',
               ]}
             />
@@ -122,7 +122,7 @@ const History = () => {
               content={[
                 '연매출 1조 원 돌파',
                 '오스카 회장, 기부금 100억 원 쾌척',
-                '소감: "역시 CEO는 바빠"',
+                '언론: "천사 CEO의 귀환"',
               ]}
             />
           </div>

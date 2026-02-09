@@ -7,7 +7,7 @@ import styles from './Members.module.css';
 
 interface MemberItemProps {
   name: string;
-  roles: string[];
+  roles: (string | React.ReactNode)[];
   description?: React.ReactNode;
   image?: string;
 }
@@ -57,14 +57,12 @@ const Members = () => {
           />
           <MemberItem
             name="Tin"
-            roles={['시스템운영총괄', '시스템운영실']}
-            description={
+            roles={[
+              '시스템운영총괄',
               <>
-                (현)생산라인총괄{' '}
-                <span className="text-highlight-red">(구)</span>
-                생산라인총괄
-              </>
-            }
+                시스템운<span className="text-highlight-red">영</span>실
+              </>,
+            ]}
             image={tinImg}
           />
           <MemberItem

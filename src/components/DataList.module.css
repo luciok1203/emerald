@@ -1,0 +1,19 @@
+.title {
+  color: var(--light-green); /* Assuming global variable or needs to be checked */
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.content {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.8;
+}
+
+.separator {
+  /* Common separator style */
+  margin: 40px 0;
+  border-top: 1px dashed #ccc; /* Or use the global .dashed-separator if preferred, but self-contained is better */
+}
